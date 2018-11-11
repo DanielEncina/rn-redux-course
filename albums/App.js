@@ -8,14 +8,13 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native'
+import Header from './src/components/header.js'
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.instructions}>some text !!! </Text>
-      </View>
+        <Header headerText={'Albums'}/>
     );
   }
 }
@@ -38,4 +37,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     backgroundColor: 'deeppink'
   },
+  textStyle: {
+    fontSize: 20
+  }
 });
